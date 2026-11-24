@@ -1,0 +1,503 @@
+{
+ "hallo": {
+  "cols": 5,
+  "rows": 4,
+  "names": [
+   "hallo",
+   "guten-morgen",
+   "guten-tag",
+   "gute-nacht",
+   "tschuess",
+   "auf-wiedersehen",
+   "bitte",
+   "danke",
+   "ja",
+   "nein",
+   "kind",
+   "junge",
+   "maedchen",
+   "name",
+   "freund",
+   "freundin",
+   "lehrerin",
+   "lehrer"
+  ]
+ },
+ "klasse": {
+  "cols": 4,
+  "rows": 4,
+  "names": [
+   "stuhl",
+   "tisch",
+   "stift",
+   "buntstift",
+   "schere",
+   "kleber",
+   "papier",
+   "buch",
+   "tafel",
+   "rucksack",
+   "brotdose",
+   "trinkflasche",
+   "heft",
+   "pinsel",
+   "toilette",
+   "pause"
+  ]
+ },
+ "farben": {
+  "cols": 4,
+  "rows": 4,
+  "names": [
+   "rot",
+   "gelb",
+   "blau",
+   "gruen",
+   "orange",
+   "lila",
+   "rosa",
+   "braun",
+   "schwarz",
+   "weiss",
+   "grau",
+   "bunt",
+   "farbe",
+   "regenbogen"
+  ]
+ },
+ "zahlen": {
+  "cols": 3,
+  "rows": 1,
+  "names": [
+   "zahl",
+   "wuerfel",
+   "finger"
+  ]
+ },
+ "familie": {
+  "cols": 4,
+  "rows": 4,
+  "names": [
+   "mama",
+   "papa",
+   "oma",
+   "opa",
+   "bruder",
+   "schwester",
+   "baby",
+   "familie",
+   "mutter",
+   "vater",
+   "onkel",
+   "tante",
+   "cousin",
+   "cousine",
+   "eltern",
+   "geschwister"
+  ]
+ },
+ "koerper": {
+  "cols": 4,
+  "rows": 4,
+  "names": [
+   "kopf",
+   "haare",
+   "gesicht",
+   "auge",
+   "ohr",
+   "nase",
+   "mund",
+   "zahn",
+   "arm",
+   "hand",
+   "finger",
+   "bauch",
+   "ruecken",
+   "bein",
+   "knie",
+   "fuss"
+  ]
+ },
+ "gefuehle": {
+  "cols": 4,
+  "rows": 4,
+  "names": [
+   "froh",
+   "gluecklich",
+   "traurig",
+   "wuetend",
+   "muede",
+   "aengstlich",
+   "ueberrascht",
+   "krank",
+   "lustig",
+   "stolz",
+   "ruhig",
+   "umarmung",
+   "kuss",
+   "taschentuch"
+  ]
+ },
+ "kleidung": {
+  "cols": 4,
+  "rows": 4,
+  "names": [
+   "hose",
+   "t-shirt",
+   "pullover",
+   "jacke",
+   "muetze",
+   "schal",
+   "handschuhe",
+   "socken",
+   "schuhe",
+   "stiefel",
+   "kleid",
+   "rock",
+   "schlafanzug",
+   "unterhose",
+   "hut",
+   "reissverschluss"
+  ]
+ },
+ "fruehstueck": {
+  "cols": 4,
+  "rows": 4,
+  "names": [
+   "brot",
+   "broetchen",
+   "butter",
+   "kaese",
+   "marmelade",
+   "ei",
+   "muesli",
+   "milch",
+   "saft",
+   "wasser",
+   "teller",
+   "becher",
+   "loeffel",
+   "gabel",
+   "messer",
+   "serviette"
+  ]
+ },
+ "obst": {
+  "cols": 4,
+  "rows": 4,
+  "names": [
+   "apfel",
+   "banane",
+   "birne",
+   "erdbeere",
+   "orange",
+   "weintrauben",
+   "kirsche",
+   "tomate",
+   "karotte",
+   "gurke",
+   "kartoffel",
+   "nudeln",
+   "reis",
+   "suppe",
+   "pizza",
+   "eis"
+  ]
+ },
+ "tag": {
+  "cols": 4,
+  "rows": 4,
+  "names": [
+   "aufstehen",
+   "zaehne-putzen",
+   "sich-waschen",
+   "sich-anziehen",
+   "fruehstuecken",
+   "spielen",
+   "mittag-essen",
+   "baden",
+   "lesen",
+   "schlafen",
+   "morgen",
+   "mittag",
+   "abend",
+   "nacht",
+   "uhr",
+   "zahnbuerste"
+  ]
+ },
+ "haus": {
+  "cols": 4,
+  "rows": 4,
+  "names": [
+   "haus",
+   "wohnung",
+   "kueche",
+   "bad",
+   "kinderzimmer",
+   "wohnzimmer",
+   "schlafzimmer",
+   "tuer",
+   "fenster",
+   "bett",
+   "schrank",
+   "sofa",
+   "lampe",
+   "teppich",
+   "treppe",
+   "kiste"
+  ]
+ },
+ "spielen": {
+  "cols": 4,
+  "rows": 4,
+  "names": [
+   "ball",
+   "puppe",
+   "auto",
+   "teddy",
+   "bausteine",
+   "puzzle",
+   "spiel",
+   "rutsche",
+   "schaukel",
+   "sandkasten",
+   "fahrrad",
+   "roller",
+   "turm",
+   "kreide"
+  ]
+ },
+ "tiere": {
+  "cols": 5,
+  "rows": 4,
+  "names": [
+   "hund",
+   "katze",
+   "maus",
+   "hase",
+   "vogel",
+   "fisch",
+   "kuh",
+   "schwein",
+   "pferd",
+   "schaf",
+   "huhn",
+   "ente",
+   "loewe",
+   "elefant",
+   "giraffe",
+   "affe",
+   "baer",
+   "krokodil"
+  ]
+ },
+ "wetter": {
+  "cols": 4,
+  "rows": 4,
+  "names": [
+   "sonne",
+   "regen",
+   "schnee",
+   "wind",
+   "wolke",
+   "gewitter",
+   "regenbogen",
+   "regenschirm",
+   "gummistiefel",
+   "pfuetze",
+   "schneemann",
+   "mond",
+   "fruehling",
+   "sommer",
+   "herbst",
+   "winter"
+  ]
+ },
+ "verkehr": {
+  "cols": 4,
+  "rows": 4,
+  "names": [
+   "auto",
+   "bus",
+   "zug",
+   "fahrrad",
+   "flugzeug",
+   "schiff",
+   "lastwagen",
+   "motorrad",
+   "traktor",
+   "feuerwehr",
+   "krankenwagen",
+   "polizeiauto",
+   "ampel",
+   "strasse",
+   "zebrastreifen",
+   "hubschrauber"
+  ]
+ },
+ "einkaufen": {
+  "cols": 4,
+  "rows": 4,
+  "names": [
+   "supermarkt",
+   "baeckerei",
+   "markt",
+   "kasse",
+   "einkaufswagen",
+   "korb",
+   "tasche",
+   "geld",
+   "muenze",
+   "geldbeutel",
+   "einkaufsliste",
+   "flasche",
+   "tuete",
+   "verkaeufer"
+  ]
+ },
+ "arzt": {
+  "cols": 4,
+  "rows": 3,
+  "names": [
+   "arzt",
+   "aerztin",
+   "pflaster",
+   "medizin",
+   "fieber",
+   "husten",
+   "schnupfen",
+   "thermometer",
+   "spritze",
+   "krankenhaus",
+   "taschentuch",
+   "wartezimmer"
+  ]
+ },
+ "berufe": {
+  "cols": 4,
+  "rows": 4,
+  "names": [
+   "feuerwehrmann",
+   "feuerwehrfrau",
+   "polizistin",
+   "polizist",
+   "baecker",
+   "koch",
+   "tieraerztin",
+   "bauer",
+   "busfahrer",
+   "pilotin",
+   "friseurin",
+   "erzieherin",
+   "postbote",
+   "bauarbeiter"
+  ]
+ },
+ "formen": {
+  "cols": 4,
+  "rows": 3,
+  "names": [
+   "kreis",
+   "dreieck",
+   "quadrat",
+   "rechteck",
+   "stern",
+   "herz",
+   "ecke",
+   "linie",
+   "punkt",
+   "kugel"
+  ]
+ },
+ "martin": {
+  "cols": 4,
+  "rows": 3,
+  "names": [
+   "laterne",
+   "licht",
+   "mantel",
+   "pferd",
+   "blatt",
+   "kastanie",
+   "igel",
+   "pilz",
+   "drachen",
+   "baum",
+   "herbst",
+   "kuerbis"
+  ]
+ },
+ "advent": {
+  "cols": 4,
+  "rows": 4,
+  "names": [
+   "adventskalender",
+   "adventskranz",
+   "kerze",
+   "nikolaus",
+   "stiefel",
+   "weihnachtsbaum",
+   "geschenk",
+   "stern",
+   "plaetzchen",
+   "kugel",
+   "glocke",
+   "engel",
+   "schneemann",
+   "christkind"
+  ]
+ },
+ "fasching": {
+  "cols": 4,
+  "rows": 3,
+  "names": [
+   "kostuem",
+   "maske",
+   "clown",
+   "prinzessin",
+   "pirat",
+   "hexe",
+   "ritter",
+   "gespenst",
+   "drache",
+   "krone",
+   "konfetti",
+   "zauberstab"
+  ]
+ },
+ "ostern": {
+  "cols": 4,
+  "rows": 3,
+  "names": [
+   "osterhase",
+   "osterei",
+   "nest",
+   "korb",
+   "blume",
+   "tulpe",
+   "kueken",
+   "lamm",
+   "schmetterling",
+   "biene",
+   "schokolade",
+   "gras"
+  ]
+ },
+ "geburtstag": {
+  "cols": 4,
+  "rows": 3,
+  "names": [
+   "geburtstag",
+   "torte",
+   "kerze",
+   "geschenk",
+   "party",
+   "luftballon",
+   "einladung",
+   "gast",
+   "krone",
+   "ueberraschung"
+  ]
+ }
+}

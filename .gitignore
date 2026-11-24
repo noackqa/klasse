@@ -1,0 +1,6 @@
+.DS_Store
+Thumbs.db
+.claude/
+img/hojas/*.png
+img/hojas/*.jpg
+img/hojas/*.webp
