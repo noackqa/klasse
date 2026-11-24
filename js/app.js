@@ -56,6 +56,7 @@ function home() {
       h('div', { class: 'grid' },
         smallTile('📘', 'Guía para el adulto', 'Cómo dar la clase, cómo hablar, errores típicos', '#/guia'),
         smallTile('🎵', 'Canciones y rimas', 'Todas las de las unidades, tradicionales', '#/lieder'),
+        h('button', { class: 'unit', onclick: () => location.href = 'imprimir.html' }, h('span', { class: 'e' }, '🖨️'), h('b', {}, 'Para imprimir'), h('span', {}, 'Tarjetas postal/mini y hojas A4 de estudio')),
       ),
       !hasGermanVoice() ? h('div', { class: 'tip' }, 'Esta tablet no tiene voz alemana instalada. En Android: Ajustes → Idioma → Salida de texto a voz → Google → instalar «Alemán (Alemania)».') : null,
     ),

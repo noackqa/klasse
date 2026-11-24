@@ -1,0 +1,116 @@
+:root {
+  --ink: #1E2A33; --muted: #6B7780; --line: #D9D2C3; --paper: #F6F1E7;
+  --der: #2A6FDB; --die: #D8344A; --das: #2E9E5B; --pl: #8A56C9; --accent: #2F5D8A;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; font-family: Nunito, system-ui, sans-serif; color: var(--ink); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { background: #E9E4DA; }
+.der { color: var(--der); } .die { color: var(--die); } .das { color: var(--das); } .pl { color: var(--pl); }
+
+/* ---------- controles (solo en pantalla) ---------- */
+#controls { background: #fff; border-bottom: 2px solid var(--line); padding: 12px 18px;
+  display: flex; flex-wrap: wrap; gap: 14px 22px; align-items: flex-start; font-size: 14px; font-weight: 700; }
+#controls fieldset { border: 0; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+#controls legend { font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin-bottom: 4px; width: 100%; }
+#controls label { display: inline-flex; gap: 5px; align-items: center; padding: 6px 10px; border-radius: 10px; background: var(--paper); cursor: pointer; }
+#controls label:has(input:checked) { background: var(--accent); color: #fff; }
+#controls input { margin: 0; }
+#controls .units { max-width: 640px; }
+#controls button { font: inherit; border: 0; border-radius: 12px; padding: 10px 16px; background: var(--accent); color: #fff; cursor: pointer; }
+#controls button.ghost { background: var(--paper); color: var(--ink); }
+#controls .info { color: var(--muted); font-weight: 600; align-self: center; }
+
+/* ---------- hojas ---------- */
+#pages { padding: 24px 0 60px; display: flex; flex-direction: column; align-items: center; gap: 24px; }
+.sheet { width: 210mm; height: 297mm; background: #fff; box-shadow: 0 4px 18px rgba(0,0,0,.15); position: relative; overflow: hidden;
+  display: grid; }
+.sheet.a6 { grid-template-columns: repeat(2, 105mm); grid-template-rows: repeat(2, 148.5mm); }
+.sheet.a7 { grid-template-columns: repeat(2, 105mm); grid-template-rows: repeat(4, 74.25mm); }
+.sheet .tag { position: absolute; bottom: 1.5mm; right: 3mm; font-size: 6pt; color: #bbb; }
+
+/* tarjeta: borde punteado = línea de corte */
+.card { position: relative; outline: .25mm dashed #B9B2A4; outline-offset: -.125mm; padding: 6mm; display: flex; flex-direction: column;
+  overflow: hidden; }
+.card.empty { outline: none; }
+.card .band { position: absolute; left: 0; right: 0; top: 0; height: 3mm; background: var(--c, var(--accent)); }
+.card .kind { font-size: 7pt; font-weight: 900; text-transform: uppercase; letter-spacing: .08em; color: var(--c, var(--accent)); display: flex; justify-content: space-between; gap: 4mm; }
+.card .kind span:last-child { color: #A9A196; font-weight: 800; letter-spacing: 0; text-transform: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.card .mid { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; gap: 2mm; min-height: 0; }
+.card .emo { line-height: 1; }
+.card .pic img { object-fit: contain; }
+.card .de { font-weight: 900; line-height: 1.12; }
+.card .es { color: var(--muted); font-weight: 700; line-height: 1.25; }
+.card .note { color: #8A6A1F; font-weight: 700; font-size: 7.5pt; line-height: 1.3; }
+.card .plural { font-size: 9pt; color: var(--muted); font-weight: 800; }
+.card .plural b { color: var(--pl); }
+.card .ans { background: #F6F1E7; border-radius: 3mm; padding: 2mm 3mm; width: 100%; }
+.card .ans b { display: block; font-size: 10pt; }
+.card .ans small { color: var(--muted); font-size: 8pt; font-weight: 700; }
+.card .lines { width: 100%; text-align: left; display: flex; flex-direction: column; gap: 1.1mm; }
+.card .ln { display: grid; grid-template-columns: 9mm 1fr; gap: 2mm; align-items: baseline; }
+.card .ln .w { font-size: 6.5pt; font-weight: 900; color: #fff; border-radius: 1.5mm; text-align: center; padding: .6mm 0; }
+.card .ln .w.L { background: var(--accent); } .card .ln .w.K { background: #E07A2E; }
+.card .ln b { font-size: 9.5pt; line-height: 1.2; }
+.card .ln.K b { color: #B85A14; }
+.card .ln i { display: block; font-style: normal; font-size: 7pt; color: var(--muted); font-weight: 600; }
+.card.dense { padding-top: 5mm; padding-bottom: 4mm; } .card.dense .ln b { font-size: 8.8pt; } .card.dense .ln i { font-size: 6.4pt; } .card.dense .lines { gap: .8mm; }
+.card .setup { font-size: 8pt; color: var(--muted); font-weight: 600; line-height: 1.3; text-align: left; }
+.card .back-hint { font-size: 6.5pt; color: #bbb; text-align: center; }
+.card .num { font-weight: 900; color: var(--accent); line-height: 1; }
+.card .dots { font-size: 12pt; letter-spacing: 1mm; color: var(--accent); }
+
+/* tamaños de letra según formato */
+.a6 .card .emo { font-size: 58pt; } .a6 .card .pic img { width: 62mm; height: 62mm; }
+.a6 .card .de { font-size: 22pt; } .a6 .card .de.long { font-size: 16pt; } .a6 .card .es { font-size: 10.5pt; }
+.a6 .card .num { font-size: 80pt; }
+.a7 .card { padding: 5mm 6mm 4mm; }
+.a7 .card .emo { font-size: 34pt; } .a7 .card .pic img { width: 32mm; height: 32mm; }
+.a7 .card .de { font-size: 17pt; } .a7 .card .de.long { font-size: 13.5pt; } .a7 .card .es { font-size: 9.5pt; }
+.a7 .card .num { font-size: 44pt; }
+.a7 .card.wide .mid { flex-direction: row; gap: 5mm; text-align: left; justify-content: flex-start; }
+.a7 .card.wide .mid > div { display: flex; flex-direction: column; gap: 1.5mm; }
+.a7 .card.picbig .emo { font-size: 50pt; } .a7 .card.picbig .pic img { width: 50mm; height: 50mm; }
+
+/* ---------- hoja A4 de estudio ---------- */
+.a4doc { width: 210mm; background: #fff; box-shadow: 0 4px 18px rgba(0,0,0,.15); padding: 12mm 13mm; }
+.unitsheet + .unitsheet { break-before: page; margin-top: 14mm; padding-top: 14mm; border-top: 2px dashed var(--line); }
+.unitsheet header { display: flex; align-items: center; gap: 5mm; border-bottom: 1.2mm solid var(--c); padding-bottom: 3mm; margin-bottom: 4mm; }
+.unitsheet header .e { font-size: 32pt; }
+.unitsheet header h1 { margin: 0; font-size: 22pt; font-weight: 900; }
+.unitsheet header p { margin: 1mm 0 0; color: var(--muted); font-size: 10pt; font-weight: 700; }
+.unitsheet h2 { font-size: 11pt; text-transform: uppercase; letter-spacing: .06em; color: var(--c); margin: 5mm 0 2mm; font-weight: 900; break-after: avoid; }
+.unitsheet .goal { font-size: 9.5pt; font-weight: 600; line-height: 1.4; margin: 0; }
+.wgrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2mm; }
+.wcell { border: .3mm solid var(--line); border-radius: 2.5mm; padding: 2mm; display: grid; grid-template-columns: 9mm 1fr; gap: 1.5mm; align-items: center; break-inside: avoid; }
+.wcell .e { font-size: 17pt; text-align: center; }
+.wcell b { font-size: 10pt; line-height: 1.1; display: block; }
+.wcell small { font-size: 7.5pt; color: var(--muted); font-weight: 700; display: block; line-height: 1.2; }
+.wcell small.p { color: var(--pl); }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
+.slist { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 1.5mm; }
+.slist li { font-size: 10pt; font-weight: 800; break-inside: avoid; }
+.slist li span { display: block; font-size: 8pt; color: var(--muted); font-weight: 600; }
+.script { display: flex; flex-direction: column; gap: 1.3mm; }
+.script .ln { display: grid; grid-template-columns: 13mm 1fr; gap: 2mm; align-items: baseline; font-size: 10pt; break-inside: avoid; }
+.script .w { font-size: 7pt; font-weight: 900; color: #fff; border-radius: 1.5mm; text-align: center; padding: .6mm 0; }
+.script .w.L { background: var(--accent); } .script .w.K { background: #E07A2E; }
+.script b { font-weight: 800; } .script .K b { color: #B85A14; }
+.script i { font-style: normal; color: var(--muted); font-size: 8pt; font-weight: 600; margin-left: 2mm; }
+.script em { display: block; font-style: normal; color: #9A6B00; font-size: 8pt; font-weight: 700; }
+.box { background: #FFF6D8; border: .3mm dashed #E8C766; border-radius: 2.5mm; padding: 2.5mm 3.5mm; font-size: 9pt; font-weight: 600; line-height: 1.4; break-inside: avoid; }
+.box ul { margin: 1mm 0 0; padding-left: 4.5mm; }
+.footer-legend { font-size: 8pt; color: var(--muted); margin-top: 5mm; font-weight: 700; }
+
+/* ---------- impresión ---------- */
+@media print {
+  body { background: #fff; }
+  .no-print { display: none !important; }
+  #pages { padding: 0; gap: 0; display: block; }
+  .sheet { box-shadow: none; break-after: page; margin: 0; }
+  .sheet:last-child { break-after: auto; }
+  .a4doc { box-shadow: none; width: auto; padding: 0; }
+  .unitsheet + .unitsheet { margin-top: 0; padding-top: 0; border-top: 0; }
+}
+@media screen and (max-width: 900px) {
+  #pages { zoom: .5; }
+}

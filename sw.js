@@ -1,8 +1,8 @@
 // Funciona sin internet: guarda la app la primera vez y luego sirve desde caché.
-const VERSION = 'klasse-v1';
-const CORE = ['./', 'index.html', 'manifest.webmanifest', 'css/style.css', 'icons/icon.svg', 'icons/icon-192.png', 'icons/icon-512.png',
+const VERSION = 'klasse-v2';
+const CORE = ['./', 'index.html', 'manifest.webmanifest', 'css/style.css', 'css/print.css', 'imprimir.html', 'icons/icon.svg', 'icons/icon-192.png', 'icons/icon-512.png',
   'audio/index.json', 'img/index.json',
-  ...['app', 'ui', 'lesson', 'extras', 'speech', 'rec', 'zahlen', 'temario', 't1', 't2', 't3', 't4', 'guia'].map(f => `js/${f}.js`)];
+  ...['app', 'ui', 'lesson', 'extras', 'speech', 'rec', 'zahlen', 'temario', 't1', 't2', 't3', 't4', 'guia', 'print'].map(f => `js/${f}.js`)];
 const MEDIA = 'klasse-media';   // dibujos y audios: se guardan según se usan
 
 self.addEventListener('install', e => e.waitUntil(caches.open(VERSION).then(c => c.addAll(CORE)).then(() => self.skipWaiting())));
